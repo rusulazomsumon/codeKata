@@ -1,0 +1,48 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.keyword-collector h1{
+    padding: 5px;
+    background-color: rgb(68, 95, 19);
+    color: aliceblue;
+    text-align: center;
+}
+
+.add-word{
+    width: 100%;
+    height: 100px;
+    background-color: rgb(99, 150, 3);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.add-word input{
+    padding: 5px;
+    font-size: 16px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 600;
+    color:aliceblue;
+    border: none;
+}
+.add-word input[type=submit]{
+    background-color: rgb(68, 95, 19);
+    border-radius: 5px;
+    border: 1px solid black;
+}
+.Keyword-lists{
+    width: 100%;
+    height: auto;
+    padding-left: 10%;
+    background-color: rgb(68, 95, 19);
+    color: aliceblue;
+    
+}
+.Keyword-lists h3{
+    text-decoration: underline;
+}
+.Keyword-lists .list-item{
+    margin-left: 30px;  
+    padding: 2px;  
+}

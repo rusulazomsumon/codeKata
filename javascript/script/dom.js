@@ -70,5 +70,46 @@
 // for(var i=0;i<OddlistItems.length;i++){
 //     OddlistItems[i].style.color="#000000";
 // }
+// ******(((((( Traversing The Dom: parent node using querySelector ))))))*******
+// var keywordItems = document.querySelector('.Keyword-lists');
+// console.log(keywordItems);
+// keywordItems.style.backgroundColor = "#000000";
+// keywordItems.parentNode.style.border = "5px solid #000000"; //chenge keyword collectors border. parents of keyword-lists  
+// var listItems = document.querySelector('.list-item');
+// listItems.parentNode.parentNode.parentNode.style.border = "5px solid #000000"; //chenge keyword collectors border. parents of keyword-lists  
+/////////////////////////////////////////////////////////////////////////////////
+// ******(((((( Traversing The Dom: parent Elements using querySelector ))))))*******
+//////////////////////////////////////////////////////////////////////////////////
+// Aslike parent Node
+// var listItems = document.querySelector('.list-item');
+// listItems.parentElement.parentElement.parentElement.style.border = "5px solid #000000";
+
+// 55555555 Traversing The Dom: ChildNode using querySelector 55555555
+// var keywordItems = document.querySelector('ul');
+// keywordItems.children[1].style.border = "2px solid #000000"; 
+// var listItems = document.querySelector('.list-item');
+// listItems.parentNode.parentNode.parentNode.style.border = "5px solid #000000";
+//*********first child & Last chils************ */
+// var keywordItems = document.querySelector('ul');
+// console.log(keywordItems.firstChild);
+// keywordItems.firstChild.textContent = "AI"; 
+// keywordItems.lastChild.textContent = "AI"; 
+
+//*********firstElementChild & lastElementChild************ */
+// var keywordItems = document.querySelector('ul');
+// keywordItems.firstElementChild.textContent = "AI"; 
+// keywordItems.lastElementChild.textContent = "Big Data"; 
+
+//*********nextSibling and nextElementSibling & (previous)************ */
+// var title = document.querySelector('h3');
+// title.nextSibling.textContent = "AI"; 
+// title.nextElementSibling.textContent = "Big Data";
+// ******* previousElementsSibling
+// var unorderdList = document.querySelector('ul');
+// unorderdList.previousElementSibling.textContent = "My Keyword Collections";
+
+/////////////////////////////////////////////////////////////////////////
+// ******(((((( ))))))*******
+////////////////////////////////////////////////////////////////////////
 
 

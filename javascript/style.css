@@ -5,9 +5,12 @@
 /* section{
     margin: 20px;
 } */
+.keyword-collector{
+    background-color: rgb(68, 95, 19);
+
+}
 .keyword-collector h1{
     padding: 5px;
-    background-color: rgb(68, 95, 19);
     color: aliceblue;
     text-align: center;
 }

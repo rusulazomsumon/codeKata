@@ -112,27 +112,33 @@
 // ******((((((2. Create Element: Using Dom(Without HTML directly) ))))))*******
 ////////////////////////////////////////////////////////////////////////
 
-//create the html elements and store in a variable 
-var newDiv = document.createElement('div');
-//add id 
-newDiv.id = 'card';
+// //create the html elements and store in a variable 
+// var newDiv = document.createElement('div');
+// //add id 
+// newDiv.id = 'card';
 
-//add classsName 
-newDiv.className = 'card1';
+// //add classsName 
+// newDiv.className = 'card1';
 
-//add atribute to our div
-newDiv.setAttribute('title', 'card div section');
+// //add atribute to our div
+// newDiv.setAttribute('title', 'card div section');
 
-//add valute to created div
-var newDivText = document.createTextNode('This is Big Data');
+// //add valute to created div
+// var newDivText = document.createTextNode('Simple Dom Application');
 
-//add textNode to created div 
-newDiv.appendChild(newDivText);
+// //add textNode to created div 
+// newDiv.appendChild(newDivText);
 
-//now set the positon where we want set the dive. 
-// আমরা নতুন div কে .keyword-collector এর ভিতর h1 এর উপরে দেখাব 
-var container = document.querySelector('header .keyword-collector');
-var h1 =document.querySelector('header h1');
-container.insertBefore(newDiv,h1);
+// //now set the positon where we want set the dive. 
+// // আমরা নতুন div কে under body .keyword-collector এর ভিতর h1 এর উপরে দেখাব 
+// var container = document.querySelector('body .keyword-collector');
+// var h1 = document.querySelector('body h1');
+// container.insertBefore(newDiv, h1);
 
-console.log(newDiv);
+//styling the div (newDiv) from DOM
+// newDiv.style.fontSize = "16px";
+// newDiv.style.textAlign = "center";
+// newDiv.style.color = "#ffffff";
+// newDiv.style.paddingTop = "5px";
+
+

@@ -6,6 +6,7 @@
 // var doc = console.log(document.title);
 
 // getElementByID
+// var addConform = document.getElementById("addWordBtn");
 // Using getElementById after selection we have 
 // change Text, color and background 
 // var heading = document.getElementById("headline");
@@ -108,6 +109,8 @@
 // var unorderdList = document.querySelector('ul');
 // unorderdList.previousElementSibling.textContent = "My Keyword Collections";
 
+
+
 /////////////////////////////////////////////////////////////////////////
 // ******((((((2. Create Element: Using Dom(Without HTML directly) ))))))*******
 ////////////////////////////////////////////////////////////////////////
@@ -142,3 +145,149 @@
 // newDiv.style.paddingTop = "5px";
 
 
+
+
+/////////////////////////////////////////////////////////////////////////
+// ******((((((3. eventListener from W3School) ))))))*******
+////////////////////////////////////////////////////////////////////////
+
+// ***[[[  Alert Massage Button  ]]]*** 
+// var addConform = document.getElementById("addWordBtn");
+// addConform.addEventListener("click",alertMsg);
+
+// // alert function 
+// function alertMsg(){
+//     alert("Are you sure to insert?");
+// }
+
+
+// // ***[[[  Add Multiple eventListener for same Event  ]]]*** 
+//  // **same event multiple function 
+//  var addConform = document.getElementById("addWordBtn");
+//  addConform.addEventListener("click",alertMsg); 
+//  addConform.addEventListener("click",alertMsg2); 
+// // alert function 1 
+// function alertMsg(){
+//     alert("Alert Massage 1");
+// }
+// // alert function 2
+// function alertMsg2(){
+//     alert("Alert Massage 2 also executed");
+// }
+
+// ***[[[  Add Multiple eventListener for same Multiple Event  ]]]*** 
+ // **multiple event multiple function 
+//  var addConform = document.getElementById("addWordBtn");
+//  addConform.addEventListener("mouseover",statsMouseOver); 
+//  addConform.addEventListener("click",statsClick); 
+//  addConform.addEventListener("mouseout",statsMouseOut); 
+
+// // mouseover status 
+// function statsMouseOver(){
+//     var mouseStats = document.getElementById("stat");
+//     mouseStats.innerHTML = "Mouse Over!";
+//     //to show all record 
+//     // mouseStats.innerHTML += "Mouse Over!";
+// }
+
+// // mouseClick status 
+// function statsClick(){
+//     var mouseStats = document.getElementById("stat");
+//     mouseStats.innerHTML = "Clicked!";
+// }
+
+// // mouseover status 
+// function statsMouseOut(){
+//     var mouseStats = document.getElementById("stat");
+//     mouseStats.innerHTML = "Mouse Out!";
+// }
+
+// // **** as value of textbox 
+// // mouseover status 
+// function statsMouseOver(){
+//     var mouseStats = document.getElementById("textBox");
+//     mouseStats.value = "MouseIsOver";
+//     //to show all record 
+//     // mouseStats.innerHTML += "Mouse Over!";
+// }
+
+// // mouseover status 
+// function statsClick(){
+//     var mouseStats = document.getElementById("textBox");
+//     mouseStats.value = "cliked";
+//     //to show all record 
+//     // mouseStats.innerHTML += "Mouse Over!";
+// }
+
+// // mouseover status 
+// function statsMouseOut(){
+//     var mouseStats = document.getElementById("textBox");
+//     mouseStats.value = "MouseIsOut";
+//     //to show all record 
+//     // mouseStats.innerHTML += "Mouse Over!";
+// }
+
+
+/////////////////////////////////////////////////////////////////////////
+// ******((((((3.2 eventListener to window objects) ))))))*******
+////////////////////////////////////////////////////////////////////////
+
+// ********* Projects: Resize Window genarate Random Number ************
+//adding evenLiatener
+// var windowEvent = window.addEventListener("resize", resizeFunc);
+
+// //function description 
+// function resizeFunc(){
+//     //creating random fraction number 
+//     var ranNum = Math.random();
+
+//     //flot to integer conversion , multiple by 10 for 0 - 9 , Math.floor() nearest number
+//     ranNum = Math.floor(ranNum*10);
+    
+//     // display the random number in windos inside the stat.div 
+//     //select the div 
+//     var statDiv = document.getElementById("stat");
+//     statDiv.innerHTML = "Random Number: "+ranNum;
+// }
+
+
+/////////////////////////////////////////////////////////////////////////
+// ******((((((4: Event Propogation (i. Bubbling ii. Capturing)) ))))))*******
+////////////////////////////////////////////////////////////////////////
+
+// ********* Projects: ************
+
+
+/////////////////////////////////////////////////////////////////////////
+// ******((((((5: removeEventListener)) ))))))*******
+////////////////////////////////////////////////////////////////////////
+
+// ********* Projects: Resize Window genarate Random Number কিন্তু stop button এ click করলে আর কাজ করবে না  ************
+// adding evenLiatener
+// var windowEvent = window.addEventListener("resize", resizeFunc);
+
+// //function description 
+// function resizeFunc(){
+//     //creating random fraction number 
+//     var ranNum = Math.random();
+
+//     //flot to integer conversion , multiple by 10 for 0 - 9 , Math.floor() nearest number
+//     ranNum = Math.floor(ranNum*10);
+    
+//     // display the random number in windos inside the stat.div 
+//     //select the div 
+//     var statDiv = document.getElementById("stat");
+//     statDiv.innerHTML = "Random Number: "+ranNum;
+//     // styling text of statDiv
+//     statDiv.style.fontWeight = "600";
+// }
+// // ***********[[[[[[[[[[[Removing Event Listener]]]]]]]]]]]**************
+// var stopBtn = document.getElementById("stopBtn");
+// stopBtn.addEventListener("click", function(){
+//     var windowEvent = window.removeEventListener("resize", resizeFunc); 
+// });
+
+// var cntnBtn = document.getElementById("cntnBtn");
+// cntnBtn.addEventListener("click", function(){
+//     var windowEvent = window.addEventListener("resize", resizeFunc); 
+// });

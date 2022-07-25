@@ -1,0 +1,126 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    width: 100vw;
+    height: 100vh;
+    /* gradient color */
+    background: linear-gradient(to right, #B565A7, #641455);
+
+    /* placeing the container  */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+/* Header Title and text */
+header{
+    margin: 20px 0px 10px 0px;
+    text-align: center;
+    background-color: #98B4D4;
+    color: #000000;
+}
+
+/* Conterner of Calculator  */
+.container{
+    width: 1200px;
+    height: 100vh;
+    background: linear-gradient(to left, #B565A7, #641455);
+} 
+
+.calContainer{
+    width: 100%;
+    height: 100%;
+
+    /* centering the calculator */
+    display: flex;
+    justify-content: center;
+
+
+}
+
+.calculator{
+    width: 300px;
+    height: 200px;
+    border-radius: 5px;
+    background-color: #955251;
+    /* border: 1px solid #955251;
+    box-shadow: 5px 8px #98B4D4; */
+}
+
+.calHead{
+    width: 95%;
+    height: 50px;
+    margin: 8px;
+    border-radius: 3px;
+    border: 1px solid #98B4D4;
+    display: block;
+
+    background-color: aliceblue;
+
+    display: flex;
+
+}
+
+.calHead .display{
+    width: 100%;
+    height: 100%;
+    margin: 15px 5px 0px 0px;
+
+    text-align: end;
+    
+}
+
+.calHead {
+    font-size: 20px;
+    font-weight: 600;
+    /* TODO: Add a font of calculator */
+}
+
+/* ********** Calculator Body Part ********** */
+.calBody p{
+    text-align: center;
+    font-size: 20px;
+    font-weight: 800;
+    color: #98B4D4;
+    
+    /* TODO: Add a font of logo type */
+}
+
+/* Calculator Numbers Key And Function key */
+.keyContainer{
+    width: 95%;
+    height: auto;
+
+    display: flex;
+}
+/* Number Key */
+.keyNum{
+    width: 80%;
+    margin: 2px;
+    grid-template-columns: 1fr 1fr 1fr;
+    display: grid;
+}
+
+/* Funtion key of Calculator */
+.keyFunc{
+    width: 20%;
+    margin: 2px;
+    margin-left: 10px;
+}
+
+/* key buttons design  */
+.key-item{
+    margin-left: 5px;
+    padding: 1px;
+    width: 100%;
+    height: auto;
+}
+
+#key{
+    width: 100%;
+    margin: 2px;
+}

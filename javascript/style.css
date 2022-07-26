@@ -1,163 +1,59 @@
 *{
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
 }
-body{
-    width: 100vw;
-    height: 100vh;
-    /* gradient color */
-    background: linear-gradient(to right, #B565A7, #641455);
+/* section{
+    margin: 20px;
+} */
+.keyword-collector{
+    background-color: rgb(68, 95, 19);
 
-    /* placeing the container  */
+}
+.keyword-collector h1{
+    padding: 5px;
+    color: aliceblue;
+    text-align: center;
+}
+
+.add-word{
+    width: 100%;
+    height: 100px;
+    background-color: rgb(99, 150, 3);
     display: flex;
     justify-content: center;
     align-items: center;
-
 }
 
-/* Header Title and text */
-header{
-    margin: 20px 0px 10px 0px;
-    text-align: center;
-    background-color: #98B4D4;
-    color: #000000;
-}
-/* RAS Daily Link */
-header a{
-    text-decoration: none;
-}
-
-/* Conterner of Calculator  */
-.container{
-    width: 1200px;
-    height: 100vh;
-    background: linear-gradient(to left, #B565A7, #641455);
-} 
-
-.calContainer{
-    width: 100%;
-    height: 100%;
-
-    /* centering the calculator */
-    display: flex;
-    justify-content: center;
-
-
-}
-
-.calculator{
-    width: 300px;
-    height: 225px;
-    border-radius: 5px;
-    background-color: #955251;
-    /* border: 1px solid #955251;
-    box-shadow: 5px 8px #98B4D4; */
-}
-
-.calHead{
-    width: 95%;
-    height: 50px;
-    margin: 8px;
-    border-radius: 3px;
-    border: 1px solid #98B4D4;
-    display: block;
-
-    background-color: aliceblue;
-
-    display: flex;
-
-}
-
-.calHead .display{
-    width: 100%;
-    height: 100%;
-    /* margin: 15px 5px 0px 0px;     */
-}
-
-/* Screen input */
-.calHead .display input{
-    width: 100%;
-    height: 100%;
-    border-radius: 3px;
+.add-word input{
+    padding: 5px;
+    font-size: 14px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 600;
+    color:rgb(0, 0, 0);;
     border: none;
-
-    padding-right: 5px;
-    text-align: end;
-    font-size: medium;
-    font-weight: 600;
-/* cursor will deactivated */
-    pointer-events: none;
 }
-.calHead {
-    font-size: 20px;
-    font-weight: 600;
-    /* TODO: Add a font of calculator */
+.add-word input[type=text]{
+    width: 300px;
+    font-weight: 300;
 }
-
-/* ********** Calculator Body Part ********** */
-.calBody p{
-    text-align: center;
-    font-size: 20px;
-    font-weight: 800;
-    color: #ffffff;
-    opacity: .4;
+.add-word input[type=submit]{
+    background-color: rgb(68, 95, 19);
+    border-radius: 5px;
+    border: 1px solid black;
+    color: aliceblue;
+}
+.Keyword-lists{
+    width: 100%;
+    height: auto;
+    padding-left: 10%;
+    background-color: rgb(68, 95, 19);
+    color: aliceblue;
     
-    /* TODO: Add a font of logo type */
 }
-
-/* Calculator Numbers Key And Function key */
-.keyContainer{
-    width: 95%;
-    height: auto;
-
-    display: flex;
+.Keyword-lists h3{
+    text-decoration: underline;
 }
-/* On/Off key */
-/* on key */
-.keyOn{
-    width: 100%;
-    margin: 2px;
-    color:aliceblue;
-    background-color: #117e03;
-    border-color: #117e03;
-}
-/* off key */
-.keyOff{
-    width: 100%;
-    margin: 2px;
-    color:aliceblue;
-    background-color: #af1400;
-    border-color: #af1400;
-}
-/* Number Key */
-.keyNum{
-    width: 80%;
-    margin: 2px;
-    grid-template-columns: 1fr 1fr 1fr;
-    display: grid;
-}
-
-/* Funtion key of Calculator */
-.keyFunc{
-    width: 20%;
-    margin: 2px;
-    margin-left: 10px;
-}
-
-/* key buttons design  */
-.key-item{
-    margin-left: 5px;
-    padding: 1px;
-    width: 100%;
-    height: auto;
-}
-
-#key{
-    width: 100%;
-    margin: 2px;
-    /* key color */
-    color:aliceblue;
-    background-color: #2e262c;
-    border-color: #2e262c;
+.Keyword-lists .list-item{
+    margin-left: 30px;  
+    padding: 2px;  
 }

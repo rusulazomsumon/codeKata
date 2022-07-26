@@ -5,20 +5,21 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./style/style.css">
-    <title>Simople Calculator With Javascript - RA Sumon</title>
+    <title> Simople Calculator With Javascript - RA Sumon </title>
 </head>
 <body>
     <section class="container">
         <header>
             <h1>Simple Calculator With Javascript </h1>
-            <p>Created by Rusul Azom Sumon</p>
+            <p>Created by <a href="https://rusulazomsumon.netlify.app/" target="_blank">Rusul Azom Sumon</a></p>
         </header>
         <div class="calContainer">
             <section class="calculator">
                 <div class="calHead">
                     <div class="display">
                         <!-- disply with dom -->
-                        <p id="screen">00000000</p>
+                        <!-- <p id="screen"></p> -->
+                        <input id="screen" type="text">
                     </div>
                 </div>
                 <div class="calBody">
@@ -26,63 +27,80 @@
                     <!-- Body Elements -->
                     <div class="keyContainer">
                         <div class="keyNum">
+                            <!-- Operational key -->
                             <div class="key-item">
-                                <button id="key" value="1">
+                                <button  class="keyOn" value="AC" onclick="allClear()">
+                                    AC/ON
+                                </button>
+                            </div>
+                            <div class="key-item">
+                                <button id="key" value="(" onclick="calculator('(')">
+                                    (
+                                </button>
+                            </div>
+                            <div class="key-item">
+                                <button id="key" value=")" onclick="calculator(')')">
+                                    )
+                                </button>
+                            </div>
+                            <!-- key  -->
+                            <div class="key-item">
+                                <button id="key" value="1" onclick="calculator('1')">
                                     1
                                 </button>
                             </div>
                             <div class="key-item">
-                                <button id="key" value="2">
+                                <button id="key" value="2" onclick="calculator('2')">
                                     2
                                 </button>
                             </div>
                             <div class="key-item">
-                                <button id="key" value="3">
+                                <button id="key" value="3" onclick="calculator('3')">
                                     3
                                 </button>
                             </div>
                             <div class="key-item">
-                                <button id="key" value="4">
+                                <button id="key" value="4" onclick="calculator('4')">
                                     4
                                 </button>
                             </div>
                             <div class="key-item">
-                                <button id="key" value="5">
+                                <button id="key" value="5" onclick="calculator('5')">
                                     5
                                 </button>
                             </div>
                             <div class="key-item">
-                                <button id="key" value="6">
+                                <button id="key" value="6" onclick="calculator('6')">
                                     6
                                 </button>
                             </div>
                             <div class="key-item">
-                                <button id="key" value="7">
+                                <button id="key" value="7" onclick="calculator('7')">
                                     7
                                 </button>
                             </div>
                             <div class="key-item">
-                                <button id="key" value="8">
+                                <button id="key" value="8" onclick="calculator('8')">
                                     8
                                 </button>
                             </div>
                             <div class="key-item">
-                                <button id="key" value="9">
+                                <button id="key" value="9" onclick="calculator('9')">
                                     9
                                 </button>
                             </div>
                             <div class="key-item">
-                                <button id="key" value="0">
+                                <button id="key" value="0" onclick="calculator('0')">
                                     0
                                 </button>
                             </div>
                             <div class="key-item">
-                                <button id="key" value=".">
+                                <button id="key" value="." onclick="calculator('.')">
                                     .
                                 </button>
                             </div>
                             <div class="key-item">
-                                <button id="key" value="=">
+                                <button id="key" value="=" onclick="answer()">
                                     =
                                 </button>
                             </div>  
@@ -90,22 +108,25 @@
                         <!-- *********** Function Keys ******** -->
                         <div class="keyFunc">
                             <div class="key-item">
-                                <button id="key" value="/">
-                                    %
+                                <button class="keyOff" value="OFF" onclick="off()">
+                                    OFF
+                                </button>
+                                <button id="key" value="/" onclick="calculator('/')">
+                                    ÷
                                 </button>
                             </div>
                             <div class="key-item">
-                                <button id="key" value="*">
+                                <button id="key" value="*" onclick="calculator('*')">
                                     *
                                 </button>
                             </div>
                             <div class="key-item">
-                                <button id="key" value="-">
+                                <button id="key" value="-" onclick="calculator('-')">
                                     -
                                 </button>
                             </div>
                             <div class="key-item">
-                                <button id="key" value="+">
+                                <button id="key" value="+" onclick="calculator('+')">
                                     +
                                 </button>
                             </div>

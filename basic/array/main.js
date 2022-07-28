@@ -1,1 +1,1 @@
-console.log(alert("sumon"));
+// console.log(alert("sumon"));

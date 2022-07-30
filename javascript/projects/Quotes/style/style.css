@@ -100,13 +100,7 @@ header a{
     cursor: pointer;
     
 }
-#getQuoBtn{
-    padding: 5px;
-    border-radius: 5px;
-    background: none;
-    border: 2px solid #641455;
-    text-transform: uppercase;
-}
+
 /* Ferure area */
 .fetureArea {
     width: 100%;
